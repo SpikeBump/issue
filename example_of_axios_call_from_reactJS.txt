@@ -1,0 +1,9 @@
+useEffect(() => {
+        axios.get('http://localhost:5000/users')
+        .then(response=>
+            setUserList(response.data))
+        .catch((error) => {
+            console.log(error);
+        })
+    
+    },[])
